@@ -1,0 +1,755 @@
+:root {
+  --primary: #2c7dc9;
+  --dark: #0a1f44;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Header */
+.header {
+  height: 100px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.logo {
+  height: auto;
+  width: 100px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+}
+
+.hero-content {
+  color: var(--white);
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.badge {
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Funding Card Overlap */
+.funding-card {
+  background: var(--white);
+  padding: 40px;
+  width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(50px);
+}
+
+.card-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.check-icon {
+  background: var(--primary);
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+/* Split Section */
+.split-section {
+  display: flex;
+  min-height: 600px;
+  background: var(--dark);
+  color: white;
+}
+
+.split-image {
+  flex: 1;
+  background: url('assets/honest-officer-refuses-to-take-bribes-from-crimina-2026-01-09-00-54-40-utc-1536x1024.jpg') center/cover;
+  position: relative;
+}
+
+.quote-box {
+  position: absolute;
+  bottom: 40px;
+  right: -30px;
+  background: var(--white);
+  color: black;
+  padding: 20px;
+  width: 250px;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.split-content {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+:root {
+  --primary-blue: #2563eb;
+  --dark-bg: #0a0a0a;
+  --text-gray: #a1a1aa;
+}
+
+.who-we-are {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  background-color: var(--dark-bg);
+  overflow: hidden;
+}
+
+.split-layout {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Side Styling */
+.visual-side {
+  flex: 1;
+  position: relative;
+  background-image: url('your-chart-image.jpg'); /* Replace with your image link */
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 36, 72, 0.4); /* Subtle blue tint */
+}
+
+.floating-cta {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 25px;
+  max-width: 450px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+}
+
+.floating-cta p {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  border-left: 4px solid var(--primary-blue);
+  padding-left: 15px;
+}
+:root {
+  --primary-blue: #2563eb;
+  --dark-navy: #122448;
+  --text-muted: #64748b;
+}
+
+.philosophy-section {
+  padding: 80px 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.text-content, .list-content {
+  flex: 1.2;
+}
+
+.image-box-top, .image-box-bottom {
+  flex: 1;
+}
+
+/* Typography */
+.sub-header {
+  color: var(--dark-navy);
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.sub-header i {
+  color: var(--primary-blue);
+  font-size: 0.8rem;
+}
+
+h1, h2 {
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+h1 span, h2 span {
+  color: var(--primary-blue);
+}
+
+p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Images */
+img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.image-box-bottom {
+  position: relative;
+}
+
+.stat-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--dark-navy);
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+
+.stat-badge h2 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.stat-badge p {
+  color: #cbd5e1;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Checklist */
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.check-list i {
+  color: var(--primary-blue);
+  font-size: 0.9rem;
+}
+
+.philosophy-footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row, .row.staggered {
+      flex-direction: column;
+  }
+}
+/* Right Side Styling */
+.content-side {
+  flex: 1;
+  background-color: #000;
+  background-image: url('https://www.transparenttextures.com/patterns/black-thread.png'); /* Pattern effect */
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  color: #ffffff;
+}
+
+.content-wrapper {
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: var(--primary-blue);
+}
+
+.description {
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.btn-approach {
+  display: inline-block;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 12px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-approach:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.services-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px); /* Subtle background pattern */
+  background-size: 40px 40px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.header-content h1 span {
+  color: #2563eb;
+}
+
+.header-content p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* Grid Setup */
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+/* The "Staggered" effect from the image */
+.middle-col {
+  padding-top: 50px;
+}
+
+.service-card {
+  background: white;
+  border: 1.5px solid #2563eb;
+  padding: 40px 30px;
+  text-align: left;
+  min-height: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #2563eb;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-card h3 {
+  color: #1e293b;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Left Side Text */
+.content-side {
+  flex: 1;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.content-side h1 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.content-side h1 span {
+  color: #2563eb; /* Blue 'Touch' */
+}
+
+.content-side p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.content-side a {
+  color: #1e293b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Right Side Form */
+.form-side {
+  flex: 1;
+}
+
+.form-side form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px; /* Rounded corners like the image */
+  font-size: 0.9rem;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+button {
+  background-color: #1e293b; /* Dark navy button */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+
+}
+
+button:hover {
+  background-color: #0f172a;
+}
+
+/* Buttons */
+.btn-main {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: white;
+  padding: 12px 25px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif; /* Replace with preferred font */
+}
+
+.footer {
+  background-color: #122448; /* Dark Navy Blue */
+  color: #ffffff;
+  padding: 60px 0 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Subscription Row */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.footer-top h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.footer-top h2 span {
+  color: #4A90E2; /* Lighter blue for 'News' */
+}
+
+.subscribe-form {
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+  width: 40%;
+  padding-bottom: 5px;
+}
+
+.subscribe-form input {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  outline: none;
+}
+
+.subscribe-form button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Main Grid */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.branding img {
+  max-width: 180px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1); /* Makes logo white if it's black */
+}
+
+.branding p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 200px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact p, .hours p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.social-icons a {
+  color: white;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .subscribe-form {
+      width: 100%;
+      margin-top: 20px;
+  }
+  .footer-bottom {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+
+  .hero-inner,
+  .flex-row,
+  .split-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .funding-card {
+    width: 100%;
+    transform: translateY(0);
+    margin-top: 30px;
+  }
+
+  .split-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .quote-box {
+    right: 10px;
+  }
+}
